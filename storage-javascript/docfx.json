@@ -5,6 +5,14 @@
             
             {
                 "files": [
+                  "**/*.yml"
+                ],
+                "src": "storagev12/docs-ref-autogen/overview",
+                "dest": "sdk/storage",
+                "group": "storagev12"
+            },
+            {
+                "files": [
                     "**/*.md",
                     "**/*.yml"
                 ],
@@ -54,6 +62,14 @@
                 ]
             },
             
+            {
+                "files": [
+                  "**/*.yml"
+                ],
+                "src": "storagev2/docs-ref-autogen/overview",
+                "dest": "sdk/storage",
+                "group": "storagev2"
+            },
             {
                 "files": [
                     "**/*.md",
