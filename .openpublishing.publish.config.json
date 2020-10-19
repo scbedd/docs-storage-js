@@ -27,7 +27,8 @@
         "template_folder": "_themes",
         "base_path": "javascript",
         "customized_template_paths": [
-            "_dependentPackages/memberpage.plugins/content"
+            "_dependentPackages/memberpage.plugins/content",
+            "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
         ],
         "customized_tasks": {
             "docset_prebuild": [
@@ -35,6 +36,10 @@
                 "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
             ]
         },
+        "DiffFolder": [
+          "storage-javascript/storagev12/docs-ref-autogen/overview",
+          "storage-javascript/storagev2/docs-ref-autogen/overview"
+        ],
         "site_name": "Docs"
       }
     ],
