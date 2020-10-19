@@ -1,44 +1,125 @@
 {
-  "docsets_to_publish": [
-    {
-      "docset_name": "storage-javascript",
-      "build_source_folder": "storage-javascript",
-      "build_output_subfolder": "storage-javascript",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "RestApi": "Content",
-        "TSType": "Content",
-        "TSPackage": "Content",
-        "TSEnum": "Content",
-        "TSTypeAlias": "Content",
-        "ReferenceContainer": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "base_path": "javascript",
-      "site_name": "Docs"
+    "docsets_to_publish": [
+      {
+        "docset_name": "storage-javascript",
+        "build_source_folder": "storage-javascript",
+        "build_output_subfolder": "storage-javascript",
+        "locale": "en-us",
+        "monikers": [],
+        "moniker_ranges": [ "storagev12", "storagev2" ],
+        "open_to_public_contributors": false,
+        "type_mapping": {
+          "Conceptual": "Content",
+          "ManagedReference": "Content",
+          "RestApi": "Content",
+          "UniversalReference": "Content",
+          "JavaMember": "Content",
+          "JavaType": "Content",
+          "JavaPackage": "Content",
+          "JavaEnum": "Content",
+          "TSType": "Content",
+          "TSPackage": "Content",
+          "TSEnum": "Content",
+          "TSTypeAlias": "Content",
+          "ReferenceContainer": "Content"
+        },
+        "build_entry_point": "docs",
+        "template_folder": "_themes",
+        "base_path": "azure/developer",
+        "customized_template_paths": [
+            "_dependentPackages/memberpage.plugins/content"
+        ],
+        "customized_tasks": {
+            "docset_prebuild": [
+                "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+                "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+            ]
+        },
+        "site_name": "Docs"
+      }
+    ],
+    "notification_subscribers": [
+        "azuresdkdocreview@microsoft.com",
+        "scbedd@microsoft.com"
+    ],
+    "sync_notification_subscribers": [],
+    "branches_to_filter": [],
+    "git_repository_branch_open_to_public_contributors": "master",
+    "skip_source_output_uploading": false,
+    "need_preview_pull_request": true,
+    "contribution_branch_mappings": {},
+    "dependent_repositories": [
+      {
+        "path_to_root": "_themes",
+        "url": "https://github.com/Microsoft/templates.docs.msft",
+        "branch": "master",
+        "branch_mapping": {}
+      }
+    ],
+    "branch_target_mapping": {},
+    "need_generate_pdf_url_template": false,
+    "dependent_packages": [
+        {
+          "id": "opbuild.templates.uref",
+          "nuget_feed": "https://www.myget.org/F/op/api/v2",
+          "path_to_root": "_dependentPackages/uref.plugins",
+          "target_framework": "net45",
+          "version": "latest"
+        },
+        {
+          "id": "Microsoft.OpenPublishing.CommonPlugins",
+          "nuget_feed": "https://www.myget.org/F/op/api/v2",
+          "path_to_root": "_dependentPackages/CommonPlugins",
+          "target_framework": "net45",
+          "version": "latest"
+        },
+        {
+          "path_to_root": "_dependentPackages/memberpage.plugins",
+          "target_framework": "net45",
+          "version": "latest",
+          "id": "memberpage.plugins",
+          "nuget_feed": "https://www.myget.org/F/docfx/api/v2"
+        }
+      ],
+      "SplitTOC": [
+        
+        "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
+        
+        "storage-javascript/storagev2/docs-ref-autogen/toc.yml"
+        
+      ],
+      "JoinTOCPlugin": [
+        
+        {
+            "TopLevelTOC": "docs-ref-mapping/reference-storagev12.yml",
+            "ReferenceTOC": "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
+            "ReferenceTOCUrl": "/azure/developer/javascript/sdk/storage/toc.json",
+            "OutputFolder": "storage-javascript/storagev12/docs-ref-autogen/overview",
+            "HideEmptyNode": false,
+            "ContainerPageMetadata": {
+                "langs": [
+                "js"
+                ],
+                "open_to_public_contributors": false
+            }
+        },
+        
+        {
+            "TopLevelTOC": "docs-ref-mapping/reference-storagev2.yml",
+            "ReferenceTOC": "storage-javascript/storagev2/docs-ref-autogen/toc.yml",
+            "ReferenceTOCUrl": "/azure/developer/javascript/sdk/storage/toc.json",
+            "OutputFolder": "storage-javascript/storagev2/docs-ref-autogen/overview",
+            "HideEmptyNode": false,
+            "ContainerPageMetadata": {
+                "langs": [
+                "js"
+                ],
+                "open_to_public_contributors": false
+            }
+        }
+        
+    ],
+    "docs_build_engine": {
+      "name": "docfx_v3"
     }
-  ],
-  "notification_subscribers": [
-    "azuresdkdocreview@microsoft.com"
-  ],
-  "sync_notification_subscribers": [],
-  "branches_to_filter": [],
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
-  "dependent_repositories": [
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
-      "branch_mapping": {}
-    }
-  ],
-  "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false
 }

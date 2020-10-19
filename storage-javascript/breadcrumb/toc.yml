@@ -1,5 +1,15 @@
-
-- name: Docs
-  href: /
-  homepage: /
+- name: Azure
+  tocHref: /
+  topicHref: /azure
   items:
+  - name: Developer
+    tocHref: /
+    topicHref: /azure/developer
+    items:
+    - name: Javascript
+      tocHref: /
+      topicHref: /azure/developer/javascript   
+      items:
+      - name: Java SDK
+        tocHref: /azure/developer/javascript/sdk/storage
+        topicHref: /azure/developer/javascript/sdk/storage/overview

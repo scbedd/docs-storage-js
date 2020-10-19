@@ -1,53 +1,163 @@
 {
-  "build": {
-    "markdownEngineName": "markdig",
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
+    "build": {
+        "markdownEngineName": "markdig",
+        "content": [
+            
+            {
+                "files": [
+                  "**/*.yml"
+                ],
+                "src": "storagev12/docs-ref-autogen/overview",
+                "dest": "javascript/sdk/storage",
+                "group": "storagev12"
+            },
+            {
+                "files": [
+                    "**/*.md",
+                    "**/*.yml"
+                ],
+                "dest": "javascript/sdk/storage",
+                "group": "storagev12",
+                "src": "storagev12/docs-ref-autogen",
+                "exclude": [
+                    "**/obj/**",
+                    "**/includes/**",
+                    "README.md",
+                    "**/toc.md",
+                    "**/toc.yml",
+                    "LICENSE",
+                    "LICENSE-CODE",
+                    "ThirdPartyNotices"
+                ]
+            },
+            {
+                "files": [
+                    "**/*.md",
+                    "**/*.yml"
+                ],
+                "src": "docs-ref-services/storagev12",
+                "dest": "javascript/sdk/storage",
+                "version": "storagev12",
+                "group": "storagev12"
+            },
+            {
+                "files": [
+                    "**/toc.md",
+                    "**/toc.yml"
+                ],
+                "src": "storagev12/docs-ref-autogen",
+                "dest": "javascript/sdk/storage",
+                "group": "storagev12"
+            },
+            {
+                "files": [
+                    "**/*.yml"
+                ],
+                "src": "breadcrumb",
+                "group": "storagev12",
+                "dest": "storagev12_breadcrumb",
+                "exclude": [
+                    "**/obj/**",
+                    "**/includes/**"
+                ]
+            },
+            
+            {
+                "files": [
+                  "**/*.yml"
+                ],
+                "src": "storagev2/docs-ref-autogen/overview",
+                "dest": "javascript/sdk/storage",
+                "group": "storagev2"
+            },
+            {
+                "files": [
+                    "**/*.md",
+                    "**/*.yml"
+                ],
+                "dest": "javascript/sdk/storage",
+                "group": "storagev2",
+                "src": "storagev2/docs-ref-autogen",
+                "exclude": [
+                    "**/obj/**",
+                    "**/includes/**",
+                    "README.md",
+                    "**/toc.md",
+                    "**/toc.yml",
+                    "LICENSE",
+                    "LICENSE-CODE",
+                    "ThirdPartyNotices"
+                ]
+            },
+            {
+                "files": [
+                    "**/*.md",
+                    "**/*.yml"
+                ],
+                "src": "docs-ref-services/storagev2",
+                "dest": "javascript/sdk/storage",
+                "version": "storagev2",
+                "group": "storagev2"
+            },
+            {
+                "files": [
+                    "**/toc.md",
+                    "**/toc.yml"
+                ],
+                "src": "storagev2/docs-ref-autogen",
+                "dest": "javascript/sdk/storage",
+                "group": "storagev2"
+            },
+            {
+                "files": [
+                    "**/*.yml"
+                ],
+                "src": "breadcrumb",
+                "group": "storagev2",
+                "dest": "storagev2_breadcrumb",
+                "exclude": [
+                    "**/obj/**",
+                    "**/includes/**"
+                ]
+            }
+            
+
         ],
-        "src": "docs-ref-autogen",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.yml"
+        "resource": [
+            {
+                "files": [
+                    "**/*.png",
+                    "**/*.jpg"
+                ],
+                "exclude": [
+                    "**/obj/**",
+                    "**/includes/**"
+                ]
+            }
         ],
-        "src": "breadcrumb",
-        "dest": "breadcrumb",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/toc.yml"
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "_site"
-  }
+        "overwrite": [],
+        "externalReference": [],
+        "globalMetadata": {
+            "breadcrumb_path": "~/breadcrumb/toc.yml"
+        },
+        "groups": {
+            
+            "storagev12": {
+                "dest": "storagev12",
+                "moniker_range": "storagev12"
+            }
+            ,
+            
+            "storagev2": {
+                "dest": "storagev2",
+                "moniker_range": "storagev2"
+            }
+            
+            
+        },
+        "fileMetadata": {},
+        "template": [],
+        "dest": "_site",
+        "apiPlatform": "javascript"
+    }
 }

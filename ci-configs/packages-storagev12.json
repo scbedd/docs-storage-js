@@ -1,0 +1,9 @@
+{
+    "target_repo": {
+      "url": "",
+      "branch": "master",
+      "folder": "./storage-javascript"
+    },
+    "npm_package_sources": [
+    ]
+}
