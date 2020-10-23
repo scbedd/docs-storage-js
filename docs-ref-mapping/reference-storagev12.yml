@@ -8,4 +8,4 @@
     uid: azure.javascript.sdk.landingPage.services.other
     landingPageType: Service
     children:
-    - '*'
+    - '**'
