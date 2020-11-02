@@ -25,10 +25,9 @@
         },
         "build_entry_point": "docs",
         "template_folder": "_themes",
-        "base_path": "javascript",
+        "base_path": "azure/developer",
         "customized_template_paths": [
-            "_dependentPackages/memberpage.plugins/content",
-            "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
+            "_dependentPackages/memberpage.plugins/content"
         ],
         "customized_tasks": {
             "docset_prebuild": [
@@ -36,10 +35,6 @@
                 "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
             ]
         },
-        "DiffFolder": [
-          "storage-javascript/storagev12/docs-ref-autogen/overview",
-          "storage-javascript/storagev2/docs-ref-autogen/overview"
-        ],
         "site_name": "Docs"
       }
     ],
@@ -87,15 +82,18 @@
         }
       ],
       "SplitTOC": [
+        
         "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
+        
         "storage-javascript/storagev2/docs-ref-autogen/toc.yml"
+        
       ],
       "JoinTOCPlugin": [
         
         {
             "TopLevelTOC": "docs-ref-mapping/reference-storagev12.yml",
             "ReferenceTOC": "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
-            "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json",
+            "ReferenceTOCUrl": "/azure/developer/javascript/sdk/storage/toc.json",
             "OutputFolder": "storage-javascript/storagev12/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
@@ -109,7 +107,7 @@
         {
             "TopLevelTOC": "docs-ref-mapping/reference-storagev2.yml",
             "ReferenceTOC": "storage-javascript/storagev2/docs-ref-autogen/toc.yml",
-            "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json?view=storagev2",
+            "ReferenceTOCUrl": "/azure/developer/javascript/sdk/storage/toc.json",
             "OutputFolder": "storage-javascript/storagev2/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
