@@ -25,9 +25,10 @@
         },
         "build_entry_point": "docs",
         "template_folder": "_themes",
-        "base_path": "azure/developer",
+        "base_path": "javascript",
         "customized_template_paths": [
-            "_dependentPackages/memberpage.plugins/content"
+            "_dependentPackages/memberpage.plugins/content",
+            "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
         ],
         "customized_tasks": {
             "docset_prebuild": [
@@ -35,6 +36,13 @@
                 "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
             ]
         },
+        "DiffFolder": [
+          
+          "storage-javascript/storagev12/docs-ref-autogen/overview",
+          
+          "storage-javascript/storagev2/docs-ref-autogen/overview"
+          
+        ],
         "site_name": "Docs"
       }
     ],
@@ -93,7 +101,7 @@
         {
             "TopLevelTOC": "docs-ref-mapping/reference-storagev12.yml",
             "ReferenceTOC": "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
-            "ReferenceTOCUrl": "/azure/developer/javascript/sdk/storage/toc.json",
+            "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json?view=storagev12",
             "OutputFolder": "storage-javascript/storagev12/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
@@ -107,7 +115,7 @@
         {
             "TopLevelTOC": "docs-ref-mapping/reference-storagev2.yml",
             "ReferenceTOC": "storage-javascript/storagev2/docs-ref-autogen/toc.yml",
-            "ReferenceTOCUrl": "/azure/developer/javascript/sdk/storage/toc.json",
+            "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json?view=storagev2",
             "OutputFolder": "storage-javascript/storagev2/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
