@@ -8,7 +8,7 @@
                   "**/*.yml"
                 ],
                 "src": "storagev12/docs-ref-autogen/overview",
-                "dest": "javascript/sdk/storage",
+                "dest": "sdk/storage",
                 "group": "storagev12"
             },
             {
@@ -67,7 +67,7 @@
                   "**/*.yml"
                 ],
                 "src": "storagev2/docs-ref-autogen/overview",
-                "dest": "javascript/sdk/storage",
+                "dest": "sdk/storage",
                 "group": "storagev2"
             },
             {
