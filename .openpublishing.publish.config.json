@@ -101,7 +101,7 @@
         {
             "TopLevelTOC": "docs-ref-mapping/reference-storagev12.yml",
             "ReferenceTOC": "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
-            "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json?view=storagev12",
+            "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json",
             "OutputFolder": "storage-javascript/storagev12/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
