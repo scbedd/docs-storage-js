@@ -89,13 +89,6 @@
           "nuget_feed": "https://www.myget.org/F/docfx/api/v2"
         }
       ],
-      "SplitTOC": [
-        
-        "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
-        
-        "storage-javascript/storagev2/docs-ref-autogen/toc.yml"
-        
-      ],
       "JoinTOCPlugin": [
         
         {
