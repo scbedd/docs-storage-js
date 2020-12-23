@@ -102,6 +102,8 @@
             "TopLevelTOC": "docs-ref-mapping/reference-storagev12.yml",
             "ReferenceTOC": "storage-javascript/storagev12/docs-ref-autogen/toc.yml",
             "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json",
+            "ConceptualTOC": "storage-javascript/TOC.yml",
+            "ConceptualTOCUrl": "/javascript/sdk/toc.json?view=storagev2",
             "OutputFolder": "storage-javascript/storagev12/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
@@ -116,6 +118,8 @@
             "TopLevelTOC": "docs-ref-mapping/reference-storagev2.yml",
             "ReferenceTOC": "storage-javascript/storagev2/docs-ref-autogen/toc.yml",
             "ReferenceTOCUrl": "/javascript/sdk/storage/toc.json?view=storagev2",
+            "ConceptualTOC": "storage-javascript/TOC.yml",
+            "ConceptualTOCUrl": "/javascript/sdk/toc.json?view=storagev2",
             "OutputFolder": "storage-javascript/storagev2/docs-ref-autogen/overview",
             "HideEmptyNode": false,
             "ContainerPageMetadata": {
